@@ -1,0 +1,95 @@
+/*轮播图*/
+.banner-box .swiper-slide a{
+    display: block;
+    width: 100%;
+    height: 6.2rem;
+    background: no-repeat center/cover;
+}
+.goods-info{
+    background-color: #fff;
+    padding: 0.32rem;
+}
+.goods-info .goods-t{
+    font-size: 0.3rem;
+    line-height: 0.48rem;
+    color: #181818;
+}
+.goods-price-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+.goods-price{
+    font-size: 0.48rem;
+    color: #ff5d62;
+}
+.fx{
+    width: 1.36rem;
+    height: 0.48rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+    font-size: 0.24rem;
+    color: #999999;
+    border-radius: 2rem 0px 0px 2rem;
+    margin-right: -0.32rem;
+}
+.fx img{
+    width: 0.24rem;
+    margin-right: 0.12rem;
+}
+.goods-info-item{
+    display: flex;
+    align-items: center;
+    font-size: 0.26rem;
+    line-height: 0.5rem;
+}
+.goods-info-item .label{
+    color: #999999;
+}
+.goods-info-item .goods-info-t{
+    margin-left: 0.64rem;
+    color: #333333;
+}
+.goods-submit-box{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.98rem;
+    display: flex;
+    background-color: #fff;
+}
+.goods-submit-box .left{
+    width: 2.3rem;display: flex;justify-content: space-around;align-items: center
+}
+.goods-submit-box .left a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.goods-submit-box .left img{
+    height: 0.4rem;
+}
+.goods-submit-box .left .nav-t{
+    margin-top: 0.1rem;
+    font-size: 0.2rem;
+    color: #999999;
+}
+.goods-submit-btn{
+    width: 2.6rem;
+    height: 0.98rem;
+    line-height: 0.98rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color: #ffffff;
+}
+.add-car{
+    background-color: #ffa222;
+}
+.add-buy{
+    background-color: #ff5d62;
+}

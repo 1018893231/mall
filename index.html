@@ -1,0 +1,125 @@
+<!doctype html>
+<html rem=750>
+<head>
+    <title>首页</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="首页">
+    <meta name="Keywords" content="首页">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/swiper.css">
+    <script src="./js/swiper.js"></script>
+    <script src="./js/jquery.min.js"></script>
+</head>
+<body>
+<div class="container-box">
+    <div class="banner-box">
+        <!--轮播图-->
+        <div class="banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="" style="background-color: #0080ff"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" style="background-color: #1c6ca1"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" style="background-color: #00ff80"></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+        <!--商品种类导航-->
+        <div class="nav-box">
+            <a href="category.html" class="nav-item">
+                <div class="nav-img">
+                    <img src="./img/净水器@2x.png" alt="">
+                </div>
+                <div class="nav-t">净水器</div>
+            </a>
+            <a class="nav-item">
+                <div class="nav-img">
+                    <img src="./img/空气净化器@2x.png" alt="">
+                </div>
+                <div class="nav-t">空气净化器</div>
+            </a>
+            <a class="nav-item">
+                <div class="nav-img">
+                    <img src="./img/智能产品@2x.png" alt="">
+                </div>
+                <div class="nav-t">智能产品</div>
+            </a>
+            <a class="nav-item">
+                <div class="nav-img">
+                    <img src="./img/洗碗机@2x.png" alt="">
+                </div>
+                <div class="nav-t">洗碗机</div>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="head-title">全部产品</div>
+        <ul class="goods-list">
+            <a href="goods.html" class="goods-item">
+                <div class="item-img" style="background-image: url('./img/微信图片_20200714201605.png')"></div>
+                <div class="item-title hidden2">浩泽(OZNER)家用智能厨下净水机</div>
+                <div class="item-price">
+                    <span class="price">￥2299</span>
+                    <span class="num">123人付款</span>
+                </div>
+            </a>
+            <a class="goods-item">
+                <div class="item-img" style="background-image: url('./img/微信图片_20200714201616.png')"></div>
+                <div class="item-title hidden2">浩泽(OZNER)家用智能厨下净水机</div>
+                <div class="item-price">
+                    <span class="price">￥2299</span>
+                    <span class="num">123人付款</span>
+                </div>
+            </a>
+            <a class="goods-item">
+                <div class="item-img" style="background-image: url('./img/微信图片_20200714201626.png')"></div>
+                <div class="item-title hidden2">浩泽(OZNER)家用智能厨下净水机</div>
+                <div class="item-price">
+                    <span class="price">￥2299</span>
+                    <span class="num">123人付款</span>
+                </div>
+            </a>
+        </ul>
+    </div>
+    <nav>
+        <a href="index.html" class="active">
+            <img src="./img/首页@2x.png" alt="">
+            <div class="nav-t">首页</div>
+        </a>
+        <a href="car.html">
+            <img src="./img/购物车灰@2x.png" alt="">
+            <div class="nav-t">购物车</div>
+        </a>
+        <a href="orderList.html">
+            <img src="./img/订单灰@2x.png" alt="">
+            <div class="nav-t">订单</div>
+        </a>
+        <a href="about.html">
+            <img src="./img/我的灰@2x.png" alt="">
+            <div class="nav-t">我的</div>
+        </a>
+    </nav>
+</div>
+</body>
+<script>
+    var mySwiper = new Swiper('.banner .swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable :true,
+        },
+        loop : true
+    })
+</script>
+</html>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html rem=750>
+<head>
+    <title>购物车</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="购物车">
+    <meta name="Keywords" content="购物车">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/car.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="container-box">
+    <div class="lb">
+        <div class="check">
+            <div class="xz" data="0"></div>
+        </div>
+        <div class="goods-img" style="background-image: url('./img/微信图片_20200714201626.png')"></div>
+        <div class="mid">
+            <p class="name hidden2">韩国正品自然乐园芦荟补水保湿洗面奶男士女控油祛</p>
+            <div class="mid-b">
+                <div class="price">
+                    <p>￥<span class="pri">10.00</span></p>
+                </div>
+                <div class="jj">
+                    <span class="jia">-</span>
+                    <input disabled class="num" type="number" value="1">
+                    <span class="jian">+</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="fix_bottom">
+        <div id="qx" data="0"></div>
+        <span style="color: #333;font-size: 0.24rem">全选</span>
+        <div class="zjq">
+            合计:￥
+            <span id="zj" >0</span>
+        </div>
+        <div class="car-sub">提交订单</div>
+    </div>
+    <nav>
+        <a href="index.html">
+            <img src="./img/首页灰@2x.png" alt="">
+            <div class="nav-t">首页</div>
+        </a>
+        <a href="car.html" class="active">
+            <img src="./img/购物车@2x.png" alt="">
+            <div class="nav-t">购物车</div>
+        </a>
+        <a href="orderList.html">
+            <img src="./img/订单灰@2x.png" alt="">
+            <div class="nav-t">订单</div>
+        </a>
+        <a href="about.html">
+            <img src="./img/我的灰@2x.png" alt="">
+            <div class="nav-t">我的</div>
+        </a>
+    </nav>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        js();
+        $(".xz").click(function(){
+            var a = $(this).attr("data");
+            if (a==0) {
+                $(this).css("background-image","url(img/check_on.jpg)");
+                $(this).attr("data",1)
+            }else{
+                $(this).css("background-image","url(img/check.jpg)");
+                $(this).attr("data",0)
+                $("#qx").attr("data",0);
+                $("#qx").css("background-image","url(img/check.jpg)");
+            }
+            js();
+
+        })
+        $("#qx").click(function(){
+            var a = $(this).attr("data");
+            if (a==0) {
+                $(".xz").attr("data",1);
+                $(this).css("background-image","url(img/check_on.jpg)");
+                $(".xz").css("background-image","url(img/check_on.jpg)");
+                $(this).attr("data",1);
+            }else{
+                $(".xz").attr("data",0);
+                $(this).css("background-image","url(img/check.jpg)");
+                $(".xz").css("background-image","url(img/check.jpg)");
+                $(this).attr("data",0);
+            }
+            js();
+        })
+        $(".jian").click(function(){
+            var a = $(this).prev().val();
+            a++;
+            $(this).prev().val(a);
+            js();
+
+        })
+        $(".jia").click(function(){
+            var a = $(this).next().val();
+            a--;
+            $(this).next().val(a);
+            var a = $(".xz").attr("data");
+            if(a==1){
+                js();
+            }
+        })
+        $(".del").click(function(){
+            $(this).parent().parent().remove();
+            js();
+        })
+        function js(){
+            var num=0;
+            var conut=0;
+            $(".xz").each(function(){
+                if ($(this).attr("data")==1) {
+                    var b = $(this).parent().next().next().find(".num").val();
+                    var jg = $(this).parent().next().next().find(".pri").text();
+                    conut+=parseInt(b);
+                    num+=b*jg;
+                }
+            })
+            console.log(num)
+            $('#zj').html(num);
+        }
+    })
+
+</script>
+</body>
+</html>

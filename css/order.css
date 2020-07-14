@@ -1,0 +1,92 @@
+.address-box{
+    padding: 0.36rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #181818;
+    font-size: 0.26rem;
+}
+#address-d{
+    margin-top: 0.2rem;
+    font-size: 0.3rem;
+}
+.address-box img{
+    height: 0.4rem;
+}
+.lb{
+    margin-top: 0.16rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.32rem;
+    background-color: #fff;
+}
+.goods-img{
+    width: 2rem;
+    height: 1.76rem;
+    background-color: #0080ff;
+}
+.mid{
+    width: 4.4rem;
+}
+.mid .name{
+    font-size: 0.26rem;
+    color: #181818;
+}
+.mid-b{
+    margin-top: 0.5rem;
+    display: flex;justify-content: space-between;align-items: center
+}
+.mid .price{
+    font-size: 0.36rem;
+    color: #ff5d62;
+}
+.goods-info{
+    background-color: #fff;
+    padding: 0.32rem;
+}
+.goods-info-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.26rem;
+    line-height: 0.6rem;
+}
+.goods-info-item .label{
+    color: #999999;
+}
+.goods-info-item .goods-info-t{
+    font-size: 0.26rem;
+    color: #ff5d62;
+}
+.fix_bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.98rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.car-sub{
+    margin-left: auto;
+    width: 2.6rem;
+    height: 100%;
+    background-color: #ff5d62;
+    font-size: 0.3rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 0.98rem;
+}
+.zjq{
+    margin-left: 0.32rem;
+    font-size: 0.3rem;
+    color: #ff5d62;
+}
+#zj{
+    font-size: 0.48rem;
+}

@@ -1,0 +1,96 @@
+.lb{
+    margin-top: 0.16rem;
+    display: flex;
+    align-items: center;
+    padding: 0.32rem;
+    background-color: #fff;
+}
+.check{
+    margin-left: -0.14rem;
+    width: 0.4rem;
+    height: 0.4rem;
+}
+.xz{
+    width: 100%;
+    height: 100%;
+    background: url("../img/check.jpg") no-repeat center/cover;
+}
+.goods-img{
+    width: 1.8rem;
+    height: 1.76rem;
+    background: no-repeat center/cover;
+    margin-right: 0.2rem;
+    margin-left: 0.14rem;
+}
+.mid{
+    width: 4.4rem;
+}
+.mid .name{
+    font-size: 0.26rem;
+    color: #181818;
+}
+.mid-b{
+    margin-top: 0.5rem;
+    display: flex;justify-content: space-between;align-items: center
+}
+.mid .price{
+    font-size: 0.36rem;
+    color: #ff5d62;
+}
+.jj{
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.jj span{
+    font-size: 0.6rem;
+}
+.jj input{
+    display: block;
+    width: 0.72rem;
+    height: 0.36rem;
+    background-color: #eeeeee;
+    border-radius: 1px;
+    text-align: center;
+    border: unset;
+    margin: 0 0.16rem;
+}
+.fix_bottom{
+    position: fixed;
+    bottom: 0.98rem;
+    left: 0;
+    width: 100%;
+    height: 0.98rem;
+    background-color: #fff;
+    box-shadow: 0px -1px 4px 0px
+    rgba(230, 230, 230, 0.5);
+    display: flex;
+    align-items: center;
+    padding-left: 0.32rem;
+    box-sizing: border-box;
+}
+#qx{
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-right: 0.16rem;
+    background: url("../img/check.jpg") no-repeat center/cover;
+}
+.zjq{
+    margin-left: 0.2rem;
+    font-size: 0.26rem;
+    color: #333333;
+}
+#zj{
+    font-size: 0.36rem;
+    color: #ff5d62;
+}
+.car-sub{
+    margin-left: auto;
+    width: 2.6rem;
+    height: 100%;
+    background-color: #ff5d62;
+    font-size: 0.3rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 0.98rem;
+}
