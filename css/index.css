@@ -8,6 +8,7 @@
     width: 100%;
     height: 3.2rem;
     border-radius: 0.08rem;
+    background: no-repeat center/cover;
 }
 /*导航*/
 .nav-box{

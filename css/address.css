@@ -1,0 +1,45 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #F6F6F6;
+}
+.container-box{
+    width: 100%;
+    padding-bottom: 0.98rem;
+}
+.address-box{
+    padding: 0 0.32rem;
+    background: #fff;
+}
+.form-item{
+    height: 1rem;
+    display: flex;
+    font-size: 0.26rem;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+.form-item .title{
+    width: 1.6rem;
+    color: #333;
+}
+.input-box{
+    width: 5.8rem;
+}
+.input-box input{
+    display: block;
+    width: 100%;
+    border: none;
+    color: #999999;
+    outline:none;
+}
+.full-btn{
+    margin: 1.2rem auto 0;
+    width: 7rem;
+    height: 0.88rem;
+    background-color: #ff5d62;
+    border-radius: 0.44rem;
+    line-height: 0.88rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.3rem;
+}

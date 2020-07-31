@@ -16,12 +16,17 @@
 <body>
 <div class="container-box">
     <div class="address-box">
-        <div class="address-info">
-            <div id="address-p">上海市浦东新区金桥镇</div>
-            <div id="address-d">桂桥路60号浩泽净水3楼305室</div>
-            <div style="margin-top: 0.2rem"><span id="name">小龙虾</span><span id="mobile">137****9999</span></div>
+        <!--<div class="address-info">-->
+            <!--<div id="address-p">上海市浦东新区金桥镇</div>-->
+            <!--<div id="address-d">桂桥路60号浩泽净水3楼305室</div>-->
+            <!--<div style="margin-top: 0.2rem"><span id="name">小龙虾</span><span id="mobile">137****9999</span></div>-->
+        <!--</div>-->
+        <div class="address-info add-address">
+            <a href="./addAddress.html">+  新建收货地址</a>
         </div>
-        <img src="./img/fanhui.png" alt="">
+        <a href="./address.html">
+            <img src="./img/fanhui.png" alt="">
+        </a>
     </div>
     <div class="order-g">
         <div class="lb">
@@ -55,10 +60,12 @@
     </div>
     <div class="fix_bottom">
         <div class="zjq">￥
-            <span id="zj" >0</span>
+            <span id="zj" >2299.00</span>
         </div>
-        <div class="car-sub">提交订单</div>
+        <div class="car-sub" id="goodSubmit">提交订单</div>
     </div>
 </div>
 </body>
+<script src="./js/layer.js"></script>
+<script src="./js/global.js"></script>
 </html>

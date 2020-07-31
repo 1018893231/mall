@@ -1,0 +1,56 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #F6F6F6;
+}
+.container-box{
+    width: 100%;
+    padding-bottom: 0.98rem;
+}
+.login-h{
+    padding: 1.6rem 0.32rem 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.4rem;
+    color: #181818;
+}
+.login-h img{
+    width: 0.48rem;
+    margin-right: 0.16rem;
+}
+.login-box{
+    padding: 0 0.32rem;
+}
+.form-item{
+    height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.3rem;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+.title{
+    color: #FF5D62;
+}
+.input-box{
+    width: 5rem;
+}
+.input-box input{
+    display: block;
+    width: 100%;
+    border: none;
+    color: #999999;
+    outline:none;
+    background-color: unset;
+}
+.full-btn{
+    margin: 1.2rem auto 0;
+    width: 7rem;
+    height: 0.88rem;
+    background-color: #ff5d62;
+    border-radius: 0.04rem;
+    line-height: 0.88rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.3rem;
+}
